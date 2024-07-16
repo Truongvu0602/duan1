@@ -1,0 +1,149 @@
+:root {
+  --primary-color: #4aadfe;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  color: #333;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100px;
+}
+/* Navbar */
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(70, 72, 78);
+  font-size: 20px;
+  background-color: var(--primary-color);
+  margin: 0px 50px;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-yellow-lanterns-watermelon-and-rice-dumplings-vietnamese-new-year-background-image_557854.jpg);
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.navbar h1 {
+  font-size: 45px;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: black;
+}
+.navbar li {
+  padding: 10px;
+  margin: 0 5px;
+}
+a:hover {
+  border-bottom: #fff solid 2px;
+  font-size: 30px;
+  transition: 0.3s;
+}
+/*  Showcase*/
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+  margin: 0px 50px;
+  border-radius: 0px 0px 20px 20px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://anhdepfree.com/wp-content/uploads/2020/03/anh-background-cho-tet.jpg);
+}
+.showcase h1 {
+  font-size: 40px;
+}
+.showcase p {
+  margin: 20px 0;
+  white-space: normal;
+}
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+}
+.showcase-form .form-control {
+  margin: 20px 0;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: rgb(215, 215, 215) solid 1px;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+.showcase-form input:focus {
+  outline: none;
+}
+/* utilities */
+.container {
+  margin: 0px auto;
+  overflow: visible;
+  padding: 0 40px;
+  max-width: 1100px;
+}
+.card {
+  color: #333;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px black;
+  padding: 20px;
+  margin: 10px;
+  height: 80%;
+  width: 400px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: rgb(16, 118, 235);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+.btn:hover {
+  transform: scale(0.8);
+  transition: 0.2s;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 100%;
+}
